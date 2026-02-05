@@ -35,11 +35,15 @@ Run the demos in any order:
 | Demo | File | Description | Duration |
 |------|------|-------------|----------|
 | 1 | `1_observability_demo.ipynb` | Log events from UDFs using Event Tables | 15 min |
-| 2 | `2_streamlit_app.py` | Build interactive apps with database writeback | 15 min |
-| 3 | `3_dynamic_tables_demo.ipynb` | Create auto-refreshing data pipelines | 15 min |
-| 3b | `3_dynamic_tables_app.py` | Visual demo of Dynamic Tables | 10 min |
+| 2 | `2_dynamic_tables_demo.ipynb` | Create auto-refreshing data pipelines | 15 min |
+| 3 | `3_streamlit_app.py` | Member engagement dashboard with KPIs and charts | 15 min |
 | 4 | `4_ai_cortex_demo.ipynb` | Use built-in AI: sentiment, summarization, LLMs | 20 min |
 | 5 | `5_horizon_catalog_walkthrough.ipynb` | Explore data discovery and lineage in Snowsight | 15 min |
+
+**Skills:**
+| File | Description |
+|------|-------------|
+| `skills/engagement-agent-builder.skill.md` | Instructions for building a Cortex Agent with semantic view |
 
 ### Step 4: Cleanup
 
@@ -52,11 +56,11 @@ When finished, run **`99_cleanup.ipynb`** to remove all demo objects and restore
 ### 1. Observability with Event Tables
 Learn how to capture structured logs from Python UDFs. See how events flow into queryable tables for debugging and monitoring.
 
-### 2. Streamlit in Snowflake
-Build a simple data entry application that writes directly back to Snowflake tables. No external infrastructure required.
+### 2. Dynamic Tables
+Create declarative data pipelines that automatically refresh when source data changes. Build a 5-layer pipeline from raw interactions to executive dashboards.
 
-### 3. Dynamic Tables
-Create declarative data pipelines that automatically refresh when source data changes. Compare source tables with their transformed summaries in real-time.
+### 3. Streamlit in Snowflake
+Interactive member engagement dashboard displaying real-time KPIs, charts, and member exploration views powered by Dynamic Tables.
 
 ### 4. Cortex AI Functions
 Use Snowflake's built-in AI capabilities:
